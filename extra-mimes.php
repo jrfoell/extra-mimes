@@ -6,12 +6,11 @@ Author: justin@foell.org
 Version: 1.0
 */
 
-function addUploadMimes($mimes) {
-    $mimes = array_merge($mimes, array(
+function em_add_upload_mimes($mimes) {
+    return array_merge($mimes, array(
         'epub|mobi' => 'application/octet-stream',
         'xls' => 'application/octet-stream',
 	'xcf' => 'image/xcf',
     ));
-    return $mimes;
 }
-add_filter('upload_mimes', 'addUploadMimes');
+add_filter('upload_mimes', 'em_add_upload_mimes');
