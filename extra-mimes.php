@@ -6,7 +6,7 @@ Author: justin@foell.org
 Version: 1.0
 */
 
-function em_add_upload_mimes($mimes) {
+function em_add_upload_mimes( $mimes ) {
     return array_merge( $mimes, array(
         'epub|mobi' => 'application/octet-stream',
         'xls' => 'application/octet-stream',
