@@ -7,10 +7,10 @@ Version: 1.0
 */
 
 function em_add_upload_mimes($mimes) {
-    return array_merge($mimes, array(
+    return array_merge( $mimes, array(
         'epub|mobi' => 'application/octet-stream',
         'xls' => 'application/octet-stream',
 	'xcf' => 'image/xcf',
-    ));
+    ) );
 }
-add_filter('upload_mimes', 'em_add_upload_mimes');
+add_filter( 'upload_mimes', 'em_add_upload_mimes' );
