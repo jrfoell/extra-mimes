@@ -11,6 +11,7 @@ function em_add_upload_mimes( $mimes ) {
         'epub|mobi' => 'application/octet-stream',
         'xls' => 'application/octet-stream',
 	'xcf' => 'image/xcf',
+	'AppImage' => 'application/vnd.appimage',
     ) );
 }
 add_filter( 'upload_mimes', 'em_add_upload_mimes' );
